@@ -4,6 +4,15 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:first_project/imageCard.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+//This is the Top Sales screen.
+//It highlights the products that have been sold the most
+
+//We first define a stateful widget
+//Stateful Widget:
+//Stateful Widgets are dynamic widgets.
+//They can be updated during runtime based on user action or data change.
+//Stateful Widgets have an internal state and can re-render if the input data changes or if Widget’s state changes.
+
 class TopSales extends StatefulWidget {
   const TopSales({super.key});
 
@@ -88,6 +97,7 @@ class TopSalesState extends State<TopSales> {
                               fontWeight: FontWeight.bold))))
             ],
           ),
+          //Displaying the top sales in gridview widget
           GridView.count(
             crossAxisCount: 2,
             crossAxisSpacing: 10.0,
