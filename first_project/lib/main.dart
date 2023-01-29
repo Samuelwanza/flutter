@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:first_project/image_bunner.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// defining the main application
 void main() {
   runApp(MyApp());
 }
@@ -27,6 +28,7 @@ class myHomePage extends StatefulWidget {
   State<myHomePage> createState() => _myHomePageState();
 }
 
+// the homepageState class
 class _myHomePageState extends State<myHomePage> {
   @override
   Widget build(BuildContext context) {
@@ -56,7 +58,7 @@ class _myHomePageState extends State<myHomePage> {
                   ),
                 ),
                 ListTile(
-                  title: const Text("Top Sales"),
+                  title: const Text("Top Sales"), //the widget top sales
                   onTap: () {
                     Navigator.of(context).pop();
                     Navigator.push(
@@ -76,17 +78,13 @@ class _myHomePageState extends State<myHomePage> {
         child: Container(
             margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
             color: Colors.black,
-            width: 50,
-            height: 50,
+            width: 50, // defining the width
+            height: 50, // defining the height
             padding: const EdgeInsets.all(30),
-            // child: Text(
-            //   "New collection with 15% discount",
-            //   style: TextStyle(color: Colors.white, fontSize: 24),
-            // ),
             child: Column(
               children: [
                 Text("New collection with\t",
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.poppins( //defining the textsyle, color and fontsize
                         textStyle: const TextStyle(
                       color: Colors.white,
                       fontSize: 30,
@@ -103,16 +101,16 @@ class _myHomePageState extends State<myHomePage> {
                   "discount",
                   style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
+                          color: Colors.white, // color
+                          fontSize: 30, //fontsize
                           fontWeight: FontWeight.bold)),
                 ),
                 ImageBanner("assets/images/fashion1.webp"),
                 Container(
                   margin: const EdgeInsets.fromLTRB(0, 40, 0, 0),
                   child: SizedBox(
-                    height: 40,
-                    width: 200,
+                    height: 40, // defining the height
+                    width: 200, // defining the width
                     child: FloatingActionButton(
                       backgroundColor: Colors.lime,
                       onPressed: () {
@@ -126,9 +124,9 @@ class _myHomePageState extends State<myHomePage> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(100))),
                       child: Text(
-                        "Shop Now",
+                        "Shop Now", // the shop now widget
                         style: GoogleFonts.poppins(
-                            textStyle: const TextStyle(
+                            textStyle: const TextStyle( // styling the text
                                 color: Colors.white,
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold)),
