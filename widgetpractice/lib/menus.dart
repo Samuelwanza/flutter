@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:widgetpractice/imgs.dart';
+// Implementation of a menu bar
 
 class Menus extends StatelessWidget {
+  //Setting up the scaffold
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,6 +34,7 @@ class Menus extends StatelessWidget {
             ),
           ],
         ),
+        //Use of drawer widget
         drawer: Drawer(
           child: ListView(
             padding: EdgeInsets.zero,

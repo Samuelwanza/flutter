@@ -3,12 +3,14 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:widgetpractice/constrainedbox.dart';
 import 'package:widgetpractice/sizedbox.dart';
+// Implementation of a constrained box
 
 class ConstBox extends StatelessWidget {
   const ConstBox({super.key});
 
   @override
   Widget build(BuildContext context) {
+    //Setting up the scaffold
     return Scaffold(
       appBar: AppBar(
         title: const Text('Constrain Box Practice'),
@@ -40,6 +42,7 @@ class ConstBox extends StatelessWidget {
           ),
         ),
       ),
+      //Redirecting to the next screen
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(context,

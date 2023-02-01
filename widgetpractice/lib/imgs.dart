@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:widgetpractice/main.dart';
 
+// Implementing use of images
 class Imgs extends StatelessWidget {
+  //Setting up the scaffold
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +20,7 @@ class Imgs extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
+      //Redirecting to the next page
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(

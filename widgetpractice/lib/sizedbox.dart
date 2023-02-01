@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:widgetpractice/fitBox.dart';
 import 'constrainedbox.dart';
 
+//Implementation of a sizedBox widget
+
 class SizedBx extends StatelessWidget {
   const SizedBx({super.key});
   @override
+  //Setting up the scaffold
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -12,6 +15,7 @@ class SizedBx extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.orange[700],
       ),
+      //Implementation of a Center widget which will have a row widget housing the SizedBox widget as container
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -37,6 +41,7 @@ class SizedBx extends StatelessWidget {
           ],
         ),
       ),
+      //Rediecting to the next screen
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(

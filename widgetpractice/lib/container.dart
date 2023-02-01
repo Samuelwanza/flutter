@@ -3,11 +3,14 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:widgetpractice/constrainedbox.dart';
 
+//Implementation of a Container
+
 class Cont extends StatelessWidget {
   const Cont({super.key});
 
   @override
   Widget build(BuildContext context) {
+    //Setting up the scaffold
     return Scaffold(
       appBar: AppBar(
         title: const Text('Container Practice'),
@@ -31,6 +34,8 @@ class Cont extends StatelessWidget {
           ),
         ),
       ),
+
+      //Redirecting to the next screen
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(context,

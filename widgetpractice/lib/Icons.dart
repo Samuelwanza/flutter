@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:widgetpractice/menus.dart';
+// Implementing use of icons
 
 class Icns extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //Setting up te scaffold
     return Scaffold(
       appBar: AppBar(
         title: const Text('Icon Practice'),
@@ -11,6 +13,7 @@ class Icns extends StatelessWidget {
         backgroundColor: Colors.orange[700],
       ),
       body: Center(
+        //Setting up the body that will have the children as icons
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -32,6 +35,7 @@ class Icns extends StatelessWidget {
           ],
         ),
       ),
+      //Redirecting to the next screen
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
